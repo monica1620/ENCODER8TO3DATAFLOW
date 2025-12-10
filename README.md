@@ -52,18 +52,16 @@ Figure 02  Encoder 8 * 3
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-// Program for Encoder 8 To 3 in Dataflow Modelling
-// Developed by: Monica R
-// Register Number: 25010138
+
+//*8 Developed by: Monica R
+//* Register Number: 25010138
 
 module experi5(D, A);
-    input [7:0] D;      // D7 to D0
-    output [2:0] A;     // A2 A1 A0
-
-    assign A[0] = D[1] | D[3] | D[5] | D[7];
-    assign A[1] = D[2] | D[3] | D[6] | D[7];
-    assign A[2] = D[4] | D[5] | D[6] | D[7];
-
+input [7:0] D;     
+output [2:0] A;     
+assign A[0] = D[1] | D[3] | D[5] | D[7];
+assign A[1] = D[2] | D[3] | D[6] | D[7];
+assign A[2] = D[4] | D[5] | D[6] | D[7];
 endmodule
 
 
