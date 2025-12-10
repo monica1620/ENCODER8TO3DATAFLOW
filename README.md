@@ -81,6 +81,8 @@ endmodule
 
 
 **RESULTS**
+
+
 The Encoder 8-to-3 was successfully implemented using Dataflow Modelling in Verilog.
 The simulated outputs match exactly with the truth table, verifying correct functionality.
 
