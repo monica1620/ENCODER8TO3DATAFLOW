@@ -38,19 +38,48 @@ Figure 02  Encoder 8 * 3
 
 /* write all the steps invloved */
 
+1. Open Quartus Prime and create a new project.
+2. Create a Verilog HDL file and enter the program for the 8-to-3 encoder.
+3. Save the file and compile the program.
+4. Open the RTL Viewer to view the logic diagram.
+5. Create a new Vector Waveform File (.vwf) for simulation.
+6. Add all the input and output signals to the waveform.
+7. Apply the input values according to the truth table.
+8. Run the simulation and observe the output waveforms.
+9. Compare the simulated outputs with the truth table.
+
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+// Program for Encoder 8 To 3 in Dataflow Modelling
+// Developed by: Monica R
+// Register Number: 25010138
+
+module experi5(D, A);
+    input [7:0] D;      // D7 to D0
+    output [2:0] A;     // A2 A1 A0
+
+    assign A[0] = D[1] | D[3] | D[5] | D[7];
+    assign A[1] = D[2] | D[3] | D[6] | D[7];
+    assign A[2] = D[4] | D[5] | D[6] | D[7];
+
+endmodule
+
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/89184457-c293-4c25-92a3-1ffb0a126c1b" />
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
-**RESULTS**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/18b96c3f-b12b-48a9-a6b1-61b872be40a0" />
 
+
+**RESULTS**
+The Encoder 8-to-3 was successfully implemented using Dataflow Modelling in Verilog.
+The simulated outputs match exactly with the truth table, verifying correct functionality.
 
 
 
