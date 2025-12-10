@@ -57,7 +57,7 @@ Figure 02  Encoder 8 * 3
 //* Register Number: 25010138
 
 ```
-module encoder8to3 (D, A);
+module experi5 (D, A);
     input [7:0] D;
     output [2:0] A;
 
